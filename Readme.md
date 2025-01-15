@@ -55,3 +55,11 @@ Use Trivy to scan container images stored in Azure Container Registry (ACR).
     ```bash
     trivy image <imagerepo>.azurecr.io/alpha.1.1.1 --scanners vuln,secret,misconfig --format template --template "@html.tpl" -o report_pdca_dap.html
     ```
+
+## Semgrep Json to HTML Converter
+Use semgrep to generate the json reports.
+
+1. COnvert:
+    ```bash
+    python semgrep.py
+    ```
